@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Reverse Your String</h1>
+
+<button onclick="myFunction()">Start Here</button>
+
+<p id="answer"></p>
+
+<script>
+    function reverse_Str(str) {
+        const words = str.split(' ');
+        const reverse_person = words.map(word => word.split('').reverse().join(''));
+        const solution = reverse_person.join(' ');
+        return solution;
+    }
+    function myFunction() {
+        let person = prompt("Please enter your name", "Enter here your string");
+        let str = reverse_Str(person)
+        if (str != null) {
+            document.getElementById("answer").innerHTML = "Your reversed string: " + str;
+        }
+    }
+</script>
+
+</body>
+</html>

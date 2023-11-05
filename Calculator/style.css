@@ -1,0 +1,53 @@
+/* container | screen  | calculator | btn | numbers */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: #929698;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .calculator{
+    width: 350px;
+    height: 450px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-weight: 500;
+}
+.container .calculator div{
+    width: 100%;
+    height: calc(450px/6);
+    display: flex;
+    flex: 1;
+}
+.container .calculator div input{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.container .calculator .btn .math-btn{
+    background-color: #848786;
+}
+.numbers{
+    color: #fff;
+    background-color: #040a0d;
+    border: 1px solid rgb(34, 109, 194);
+}
+.clearbtn{
+    background-color: #39a77b;
+    max-width: 90px;
+    color: #fff;
+}
